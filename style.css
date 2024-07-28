@@ -659,6 +659,7 @@ footer span a:hover{
 /* Adjustments for the home section on mobile devices */
 @media (max-width: 768px) {
     .home {
+        background: url("images/banner.png") no-repeat center;
         background-size: contain;
         background-position: center;
         background-repeat: no-repeat;
