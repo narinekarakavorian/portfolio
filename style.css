@@ -165,13 +165,15 @@ section .title::after{
 /* home section styling */
 .home{
     display: flex;
+    background-color: #111;
     background: url("images/banner.jpg") no-repeat center;
     background-size: cover;
     height: 100vh;
     color: #fff;
     min-height: 500px;
-    background-size: cover;
     background-attachment: fixed;
+    padding: 0;
+    margin: 0;
     font-family: 'Ubuntu', sans-serif;
 }
 .home .max-width{
@@ -656,16 +658,6 @@ footer span a:hover{
         margin-bottom: 35px;
     }
 }
-/* Adjustments for the home section on mobile devices */
-@media (max-width: 768px) {
-    .home {
-        background: url("images/banner.png") no-repeat center;
-        background-size: contain;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
-}
-
 
 @media (max-width: 690px) {
     .max-width{
@@ -686,6 +678,14 @@ footer span a:hover{
 }
 
 @media (max-width: 500px) {
+    .home {
+        background: url("images/banner.jpg") no-repeat center;
+        background-size: contain;
+        background-color: black;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    
     .home .home-content .text-2{
         font-size: 50px;
     }
@@ -715,3 +715,4 @@ footer span a:hover{
         line-height: 38px;
     }
 }
+
